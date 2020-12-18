@@ -1,0 +1,280 @@
+/* 整体内容 */
+.content-padded {
+    margin-top: 0;
+}
+
+.index-header {
+    background: url(../images/indexbg.jpg) center top no-repeat;
+    background-size: 100%;
+    padding-bottom: 0.01rem;
+}
+
+.index-bar h1 {
+    color: white;
+}
+
+/* 头部导航 */
+
+.index-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2003;
+    background: transparent;
+}
+
+.index-bar-box {
+    height: 2.2rem;
+}
+
+.index-bar.bar:after {
+    background-color: transparent !important;
+}
+
+/* 定位 */
+.index-location {
+    height: 2rem;
+    color: white;
+    vertical-align: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-location .location-left {
+    font-size: 0.8rem;
+}
+
+.index-location .location-right {
+    font-size: 0.6rem;
+}
+
+.index-location .icon-zuobiaofill {
+    font-size: 0.9rem;
+}
+
+.index-location .icon-xiangyou1 {
+    font-size: 0.6rem;
+}
+
+/* 搜索 */
+.index-search {
+    top: 4.2rem;
+    z-index: 2003;
+}
+
+.index-search-box {
+    height: 2.2rem;
+}
+
+.index-search.bar:after {
+    background-color: transparent !important;
+}
+
+.index-search,
+.index-search.bar .searchbar {
+    background: transparent;
+}
+.index-search input{
+    background: #eee;
+}
+
+/* 热门 */
+.index-hot {
+    display: flex;
+}
+
+.index-hot li {
+    height: 1rem;
+    line-height: 1rem;
+    font-size: 0.5rem;
+    padding: 0 0.4rem;
+    background: rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 10px;
+    margin-right: 0.25rem;
+}
+
+.index-hot li:last-child {
+    margin-right: 0;
+}
+
+/* banner */
+.index-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 轮播图代码 */
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* 主导航 */
+
+.index-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: white;
+    padding: 0.5rem;
+}
+
+.index-nav li {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.index-nav li img {
+    width: 2.5rem;
+    margin-bottom: 0.2rem;
+    height: auto;
+}
+
+/* 店铺列表 */
+
+.index-shop-list {
+    margin-top: 0.5rem;
+}
+
+.index-shop-list li a{
+    display: flex;
+    padding: 0.6rem;
+    padding-bottom: 0.25rem;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+.index-shop-list li:last-child {
+    margin-bottom: 0;
+}
+
+.index-shop-list li img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+
+.index-shop-list li .shop-info {
+    flex: 1;
+    font-size: 0.65rem;
+    color: #6a6a6a;
+}
+
+.index-shop-list li .name {
+    color: black;
+    font-size: 0.8rem;
+}
+
+.index-shop-list li .mark {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.1rem;
+}
+
+.index-shop-list li .mark p span:first-child {
+    margin-right: 0.3rem;
+}
+
+.index-shop-list .must {
+    margin-top: 0.1rem;
+}
+
+.index-shop-list .must span {
+    margin-right: 0.3rem;
+}
+
+.index-shop-list .characteristic span {
+    color: orangered;
+    background: #fed68f;
+    border: 0.05rem solid #fed68f;
+}
+
+.index-shop-list .discount {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-right: 0.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.index-shop-list .discount span,
+.index-shop-list .characteristic span {
+    height: 0.9rem;
+    line-height: 0.9rem;
+    padding: 0 0.2rem;
+    margin-top: 0.1rem;
+    border-radius: 5px;
+}
+
+.index-shop-list .discount span {
+    color: red;
+    background: white;
+    border: 0.05rem solid red;
+    margin-right: 0.2rem;
+}
+
+.index-shop-list .discount span:first-child {
+    color: white;
+    background: red;
+    border: 0.05rem solid red;
+
+}
+
+.index-shop-list .discount .abs-toggle {
+    position: absolute;
+    right: 0;
+    top: -0.1rem;
+    display: none;
+}
+.index-shop-list{
+    padding-bottom: 2.5rem;
+}
+/* 配合插件更改属性 */
+.bar-tab{
+    z-index: 2002;
+}

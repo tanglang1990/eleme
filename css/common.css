@@ -1,0 +1,285 @@
+/* 初始化样式 */
+
+/*@font-face{font-family:fangzhen;src: url(../fonts/PINGFANG.TTF);}*/
+
+body {
+    color: #333;
+    line-height: 1.4;
+    font-family: fangzhen, microsoft yahei, cSimHei, STHeiti;
+    font-size: 62.5%;
+    font-size: 12px;
+    background: #eee;
+}
+
+body, form, input, ol, ul, dl, dd, p, h1, h2, h3, h4, h5, h6, textarea, pre {
+    margin: 0;
+}
+
+ul, input {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+}
+
+h1, h2, h3, h4, h5, h6, input, button, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+em, i {
+    font-style: normal;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* .wrap {
+    max-width: 414px;
+    margin: 0 auto;
+    background: #eee;
+} */
+
+/* @media screen and (min-width: 414px) {
+    html {
+        font-size: 11px!important;
+    }
+} */
+
+/* 公共样式 */
+
+.bg-white {
+    background: white;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.bg-transparent h1 {
+    background: transparent;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.font6 {
+    font-size: 0.6rem;
+}
+
+.font7 {
+    font-size: 0.7rem;
+}
+
+.font8 {
+    font-size: 0.8rem;
+}
+
+.font9 {
+    font-size: 0.9rem;
+}
+
+.font12 {
+    font-size: 1.2rem;
+}
+
+.font14 {
+    font-size: 1.4rem;
+}
+
+.line1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+/* 头部导航 */
+.index-bar,.shop-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2003;
+    background: transparent;
+}
+
+.index-bar-box,.shop-bar-box {
+    height: 2.2rem;
+}
+
+.index-bar.bar:after,.shop-bar.bar:after {
+    background-color: transparent !important;
+}
+/* 底部导航 */
+
+.nav-list-box {
+    height: 5rem;
+}
+
+.nav-list {
+    position: fixed;
+    width: 100%;
+    max-width: 414px;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    height: 5rem;
+    display: flex;
+    border-top: 1px solid #6a6a6a;
+    background: white;
+    z-index: 999;
+}
+
+.nav-list .nav-li {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list .nav-li .iconfont {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-list .nav-li p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.nav-list .nav-li.active {
+    color: #2178e7;
+}
+
+.nav-list .nav-li {
+    color: #6a6a6a;
+}
+
+/* 头部导航 */
+
+.fixed-header {
+    padding: 1rem;
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    max-width: 414px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    background: rgba(0, 0, 255, 0);
+    z-index: 999;
+}
+
+.fixed-header span {
+    font-size: 2rem;
+    line-height: 3rem;
+    vertical-align: middle;
+    color: white;
+}
+
+.fixed-header h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    line-height: 3rem;
+    margin: 0;
+}
+
+#address{
+    cursor: pointer;
+}
+
+.infinite-scroll-preloader {
+    margin: .5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.mtf25{
+    margin-top: -2.5rem;
+}
+
+.check{
+    cursor: pointer;
+}
+
+.litte_font{
+    font-size: .7rem;
+}
+
+.small_font{
+    font-size: .5rem !important;
+}
+
+#order-list{
+    margin-bottom: 3rem;
+}
+
+.bar {
+    z-index: 999 !important;
+}
+
+.item-media img{
+    border-radius: 5%;
+}
+

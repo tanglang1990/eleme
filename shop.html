@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, maximum-scale=1">
+    <title>饿了么</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./lib/sui-mobile/css/sm.min.css">
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./lib/swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/shop.css">
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page page-current" id="shop">
+            <div class="content">
+                <header class="shop-bar bar bar-nav">
+                    <a class="icon iconfont icon-zhuye pull-left" href="./index.html"></a>
+                    <a class="icon iconfont icon-androidgengduo pull-right"></a>
+                    <a class="icon iconfont icon-xihuanfill pull-right"></a>
+                    <a class="icon iconfont icon-sousuo pull-right"></a>
+                </header>
+                <div class="shop-header">
+                    <div class="shop-bar-box"></div>
+                    <div class="shop-info">
+                        <div class="shop-card card" id="shopInfo">
+                            <div class="card-header">店铺名</div>
+                            <div class="card-content">
+                                <img class="abs-shop-img" src="./images/shop1.jpg" alt="">
+                                <div class="list-block media-list">
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title-row">
+                                                <div class="item-title">
+                                                    蜂鸟快递 · 送约40分钟 · 月售2575
+                                                </div>
+                                            </div>
+                                            <div class="item-subtitle introduce">一家专门做炸鸡的店</div>
+                                            <div class="item-discount1">
+                                                <span class="discount-red">￥4 <em>老朋友补贴</em></span>
+                                                <span class="discount-gold">￥6 <em>无门槛</em></span>
+                                            </div>
+                                            <div class="item-discount2">
+                                                <span>28减3</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-table">
+                    <div class="buttons-tab fixed-tab" data-offset="44">
+                        <a href="#tab1" class="tab-link  active button">点餐</a>
+                        <a href="#tab2" class="tab-link button">评价</a>
+                        <a href="#tab3" class="tab-link button">商家</a>
+                    </div>
+                    <div class="tabs">
+                        <div id="tab1" class="tab active">
+                            <div class="content-block shop-goods-list">
+                                <ul class="left">
+                                    <li class="active">热销榜</li>
+                                    <li>单人精彩套餐</li>
+                                </ul>
+                                <ul class="right">
+                                    <li class="card-type">热销榜</li>
+                                    <li class="card">
+                                        <img class="abs-shop-img" src="./images/shop1.jpg" alt="">
+                                        <div class="card-header">皮蛋廋肉粥配包子套餐</div>
+                                        <div class="card-content">
+                                            <div class="list-block media-list">
+                                                <ul>
+                                                    <li class="item-content">
+                                                        <div class="item-inner">
+                                                            <div class="item-type">咸粥</div>
+                                                            <div class="item-sell">
+                                                                <span>月售1132份</span>
+                                                                <span>好评率100%</span>
+                                                            </div>
+                                                            <div class="item-price">
+                                                                <span>￥<i class="nowprice">24</i></span>
+                                                                <del>￥<i class="oldprice">28</i></del>
+                                                            </div>
+                                                            <div class="abs-item-num">
+                                                                <span class="min iconfont icon-reduce"></span>
+                                                                <span class="num">3</span>
+                                                                <span class="plus iconfont icon-add-fill"></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="tab2" class="tab">
+                            <div class="content-block">
+                            </div>
+                        </div>
+                        <div id="tab3" class="tab">
+                            <div class="content-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-car-box"></div>
+            </div>
+            <div class="shop-car active">
+                <div class="model-bg"></div>
+                <div class="shop-car-list" data-isflag='false'>
+                    <div class="top">
+                        <div class="choose">已选商品</div>
+                        <div class="clear"><i class="icon icon-remove"></i>清空</div>
+                    </div>
+                    <ul class="list">
+                        <!-- <li class="shop-li">
+                            <img src="./upload/shopbg01.png" alt="">
+                            <div class="shop-li-info">
+                                <p class="name">人气套餐：鸡腿堡</p>
+                                <p class="info">
+                                    <span>￥<i class="nowprice">24</i></span>
+                                    <del>￥<i class="oldprice">28</i></del>
+                                </p>
+                                <div class="abs-list-num">
+                                    <span class="min iconfont icon-reduce"></span>
+                                    <span class="num">3</span>
+                                    <span class="plus iconfont icon-add-fill"></span>
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="shop-car-button">
+                    <div class="info">
+                        <span class="abs-num">1</span>
+                        <span class="iconfont icon-elema"></span>
+                        <div class="money">
+                            <p>
+                                <span>￥<i class="shopcar-nowprice">24</i></span>
+                                <span>￥<del class="shopcar-oldprice">24</del></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="check">去结算</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./lib/jquery.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./lib/sui-mobile/js/sm.min.js"></script>
+<script src="./lib/swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="./js/base/shopbase.js"></script>
+<script src="./js/shop.js"></script>
+
+</html>
