@@ -702,6 +702,7 @@ function renderShop(shop) {
 
 // 5. 页面加载完后调用函数和使用类渲染页面
 $(function () {
+    alert('111')
     renderShop(shop)
     new goodsList(shop.goods);
 })
