@@ -75,6 +75,7 @@ class goodsList {
     }
     // 3.3 渲染左侧商品类别的函数
     randerLeftLi() {
+        alert('start randerLeftLi')
         // 3.3.1 定义存储拼接标签字符串的变量
         var html_str = ''
 
@@ -110,6 +111,7 @@ class goodsList {
 
         // 3.3.3 如果html_str有内容，则渲染页面
         if (html_str) {
+            alert(html_str)
             this.dom.find('.left').html(html_str);
         }
     }
