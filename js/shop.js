@@ -1,7 +1,7 @@
 // 1. 获取登录的用户信息
 // 1.1 获取当前登录用户的手机号码
 alert(1)
-let phone = localStorage.getItem('phone')
+var phone = localStorage.getItem('phone')
 alert(phone)
 // 1.2 如果用户没有登录则调转到登录页
 if (!phone) {
@@ -11,17 +11,17 @@ if (!phone) {
 
 // 2. 获取店铺信息
 // 2.1 通过公用函数获取查询字符串中的店铺id
-let shopId = getQueryParam('id');
+var shopId = getQueryParam('id');
 // 2.2 如果没有店铺id跳转回首页
 if (!shopId) {
     window.location = './index.html'
 }
 // 2.3 如果有店铺id，则利用店铺id获取店铺详情
-let shop = getShopDetailById(shopId);
+var shop = getShopDetailById(shopId);
 
 // 3. 渲染店铺商品类别和列表信息
-let shopcarFlag = false;
-let that;
+var shopcarFlag = false;
+var that;
 class goodsList {
     // 3.1 构造方法
     constructor(goods) {
