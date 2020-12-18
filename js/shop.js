@@ -1,6 +1,8 @@
 // 1. 获取登录的用户信息
 // 1.1 获取当前登录用户的手机号码
+alert(1)
 let phone = localStorage.getItem('phone')
+alert(phone)
 // 1.2 如果用户没有登录则调转到登录页
 if (!phone) {
     var next = encodeURIComponent(location.pathname + location.search);
