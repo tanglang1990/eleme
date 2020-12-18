@@ -1,8 +1,6 @@
 // 1. 获取登录的用户信息
 // 1.1 获取当前登录用户的手机号码
-alert(1)
 var phone = localStorage.getItem('phone')
-alert(phone)
 // 1.2 如果用户没有登录则调转到登录页
 if (!phone) {
     var next = encodeURIComponent(location.pathname + location.search);
@@ -77,7 +75,6 @@ class goodsList {
     }
     // 3.3 渲染左侧商品类别的函数
     randerLeftLi() {
-        alert('start randerLeftLi')
         // 3.3.1 定义存储拼接标签字符串的变量
         var html_str = ''
 
@@ -113,7 +110,6 @@ class goodsList {
 
         // 3.3.3 如果html_str有内容，则渲染页面
         if (html_str) {
-            alert(html_str)
             this.dom.find('.left').html(html_str);
         }
     }
@@ -704,7 +700,6 @@ function renderShop(shop) {
 
 // 5. 页面加载完后调用函数和使用类渲染页面
 $(function () {
-    alert('111')
     renderShop(shop)
     new goodsList(shop.goods);
 })
